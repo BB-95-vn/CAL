@@ -1,0 +1,50 @@
+@import url("./style.css");
+
+/* --- Tết hiện đại: 23/12 âm -> hết tháng 1 âm --- */
+:root{
+  --accent:#F4D03F;             /* gold */
+  --accent2:#8B1E1E;            /* deep red */
+  --ring:rgba(244,208,63,.22);
+}
+
+body{
+  background:
+    radial-gradient(1100px 520px at 22% -10%, rgba(139,30,30,.24), transparent 58%),
+    radial-gradient(900px 560px at 86% -8%, rgba(244,208,63,.14), transparent 60%),
+    radial-gradient(800px 520px at 50% 120%, rgba(244,208,63,.07), transparent 60%),
+    linear-gradient(180deg, #070A12, var(--bg));
+}
+
+/* Card viền gold nhẹ */
+.card{
+  border:1px solid rgba(244,208,63,.16);
+  box-shadow: 0 14px 34px rgba(0,0,0,.38);
+}
+
+/* Badge nhấn gold */
+.pill{
+  border:1px solid rgba(244,208,63,.18);
+  background:rgba(244,208,63,.08);
+}
+
+/* Nút Tra cứu gradient đỏ->gold */
+button.primary, .btn.primary{
+  background: linear-gradient(135deg, rgba(139,30,30,.98), rgba(244,208,63,.72));
+  border:1px solid rgba(244,208,63,.20);
+  box-shadow: 0 14px 30px rgba(139,30,30,.18);
+}
+button.primary:hover, .btn.primary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(244,208,63,.10), 0 14px 30px rgba(139,30,30,.22);
+}
+
+/* Focus ring sang hơn */
+input:focus, select:focus{
+  box-shadow: 0 0 0 3px rgba(244,208,63,.12);
+  border-color: rgba(244,208,63,.28);
+}
+
+/* Một chút highlight cho title */
+.header .title{
+  text-shadow: 0 0 18px rgba(244,208,63,.10);
+}
